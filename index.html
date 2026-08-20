@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pintou Novidades | Links Oficiais</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #121212 0%, #1e1e1e 100%);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px 12px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Perfil / Cabeçalho */
+    .profile {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 24px;
+    }
+
+    .profile-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background-color: #d62828;
+      color: #ffffff;
+      font-size: 2.2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      border: 3px solid #ffffff;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+    }
+
+    .profile h1 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .profile p {
+      font-size: 0.9rem;
+      color: #b0b0b0;
+      line-height: 1.4;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+
+    /* Lista de Botões/Links */
+    .links-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .link-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 20px;
+      background-color: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      transition: background-color 0.2s, transform 0.2s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .link-card:hover {
+      background-color: rgba(255, 255, 255, 0.16);
+      transform: translateY(-2px);
+    }
+
+    /* Estilo Especial para o Botão do Google Maps */
+    .link-card.maps-btn {
+      background: linear-gradient(135deg, #1a73e8 0%, #1557b0 100%);
+      border: none;
+      box-shadow: 0 4px 14px rgba(26, 115, 232, 0.4);
+    }
+
+    .link-card.maps-btn:hover {
+      background: linear-gradient(135deg, #1765c8 0%, #10458c 100%);
+    }
+
+    /* Card com Endereço em Destaque */
+    .info-card {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      margin-bottom: 14px;
+    }
+
+    .info-card p {
+      font-size: 0.88rem;
+      color: #dddddd;
+      margin-bottom: 12px;
+    }
+
+    /* Rodapé */
+    .footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #888888;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- PERFIL / CABEÇALHO DO SITE -->
+    <div class="profile">
+      <div class="profile-avatar">PN</div>
+      <h1>Pintou Novidades</h1>
+      <p>Sua loja de variedades e utilidades no centro de Ipatinga! Confiras nossas novidades e venha nos visitar.</p>
+    </div>
+
+    <!-- LISTA INTEGRADA DE LINKS E BOTÕES -->
+    <div class="links-list">
+
+      <!-- BLOCO DE ENDEREÇO + BOTÃO GOOGLE MAPS -->
+      <div class="info-card">
+        <p>📍 Av. 28 de Abril, 328 - Centro, Ipatinga - MG</p>
+        <a 
+          href="https://www.google.com/maps/dir/?api=1&destination=Avenida+28+de+abril,+328,+Ipatinga+-+MG,+35160-004" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="link-card maps-btn"
+        >
+          🗺️ Como Chegar (Google Maps)
+        </a>
+      </div>
+
+      <!-- OUTROS LINKS DO SEU SITE -->
+      <a href="https://wa.me/5531900000000" target="_blank" class="link-card">
+        💬 Atendimento via WhatsApp
+      </a>
+
+      <a href="https://www.instagram.com/pintounovidades_" target="_blank" class="link-card">
+        📸 Nosso Perfil no Instagram
+      </a>
+
+      <a href="#" class="link-card">
+        🛍️ Catálogo de Produtos
+      </a>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <div class="footer">
+      © Pintou Novidades • Todos os direitos reservados
+    </div>
+
+  </div>
+
+</body>
+</html>
